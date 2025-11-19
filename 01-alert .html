@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Alert Tailwind CSS</title>
+    <!-- Tajwal Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="font-family: 'Tajawal', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <style>
+      .alert{
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        max-width: 28rem;
+      }
+      .alert-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+      .alert-text{
+        flex: 1;
+      }
+      .alert-icon img{
+        width: 3rem;
+        height: 3rem;
+      }
+      .alert-head{
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+    <div>
+      <div class="alert">
+        <div class="alert-content">
+          <div class="alert-text">
+            <h2 class="alert-head">تنبيه!</h2>
+            <p>هذا هو تنبيه معلوماتي باستخدام Tailwind CSS.</p>
+          </div>
+          <div class="alert-icon">
+            <img class="w-12 h-12" src="assets/warning-icon.svg" alt>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-6 max-w-md p-6 shadow-md rounded">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <h2 class="font-bold mb-2">تنبيه!</h2>
+            <p>هذا هو تنبيه معلوماتي باستخدام Tailwind CSS.</p>
+          </div>
+          <div>
+            <img class="w-12 h-12" src="assets/warning-icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
