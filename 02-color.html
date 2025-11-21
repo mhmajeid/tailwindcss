@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+
+  <!-- في Tailwind نظام الالوان مبنى على اسماء الألوان مثل red, blue, green 
+  الصيغة بتكون كذا: text-red-500 
+  -->
+
+  <!-- موجود القيم من 50 إلى 900 بيتحكم بالالوان -->
+  <!-- 
+    فهم درجات الألوان؟
+    🔹 50 = فاتح جدًا
+    🔹 200 – 300 = هادي
+    🔹 100 = فاتح
+    🔹 400 – 500 = اللون الأساسي
+    🔹 600 – 700 = غامق
+    🔹 800 – 950 = غامق جدًا
+  -->
+  <p class="text-red-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <p class="text-blue-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+  <!-- أمثلة عملية -->
+  <!-- Text Colors -->
+  <p class="text-green-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  
+  <!-- Background Colors -->
+  <p class="bg-red-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <p class="bg-blue-900 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <p class="bg-rose-900 text-blue-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+  
+  <!-- Text Underline -->
+  <p class="underline decoration-red-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  
+  <!-- Border Colors -->
+  <input class="border-5 border-red-700" type="text">
+
+  <!-- Outline Colors -->
+  <button class="outline-5 outline-green-800">Submit</button>
+
+  <!-- Accent Colors -->
+  <input type="checkbox" class="accent-red-800" name="" id="">
+
+  <!-- Arbitrary Colors -->
+  <p class="bg-[#333] text-[#f6f6f6]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  </body>
+</html>
